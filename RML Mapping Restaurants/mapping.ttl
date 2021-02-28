@@ -85,3 +85,43 @@
     rr:predicate schema:acceptsReservations ;
     rr:objectMap [ rml:reference "Has Table booking" ; rr:datatype xsd:boolean ]
   ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:orderDelivery ;
+    rr:objectMap [ rml:reference "Has Online delivery" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:openingHours ;
+    rr:objectMap [ rml:reference "Is delivering now" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:menuAddOn ;
+    rr:objectMap [ rml:reference "Switch to order menu" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:priceRange ;
+    rr:objectMap [ rml:reference "Price range" ; rr:datatype xsd:integer ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:starRating ;
+    rr:objectMap [ rml:reference "Aggregate rating" ; rr:datatype xsd:decimal ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:ratingValue ;
+    rr:objectMap [ rml:reference "Rating color" ; rr:datatype xsd:string ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:reviewRating ;
+    rr:objectMap [ rml:reference "Rating text" ; rr:datatype xsd:string ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:reviews ;
+    rr:objectMap [ rml:reference "Votes" ; rr:datatype xsd:integer ]
+  ] .
