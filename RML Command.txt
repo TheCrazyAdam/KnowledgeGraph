@@ -1,0 +1,1 @@
+java -jar "C:\Users\Berat\Documents\graphdb-se-9.6.0\rmlmapper.jar" -m mapping.ttl -o output.ttl -s turtle
