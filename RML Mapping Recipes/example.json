@@ -1,0 +1,90 @@
+{
+  "recipes": [
+    {
+      "id": 10259,
+      "cuisine": "greek",
+      "ingredients": [
+        "romaine_lettuce",
+        "black_olives",
+        "grape_tomatoes",
+        "garlic",
+        "pepper",
+        "purple_onion",
+        "seasoning",
+        "garbanzo_beans",
+        "feta_cheese_crumbles"
+      ]
+    },
+    {
+      "id": 25693,
+      "cuisine": "southern",
+      "ingredients": [
+        "plain_flour",
+        "ground_pepper",
+        "salt",
+        "tomatoes",
+        "ground_black_pepper",
+        "thyme",
+        "eggs",
+        "green_tomatoes",
+        "yellow_corn_meal",
+        "milk",
+        "vegetable_oil"
+      ]
+    },
+    {
+      "id": 20130,
+      "cuisine": "filipino",
+      "ingredients": [
+        "eggs",
+        "pepper",
+        "salt",
+        "mayonaise",
+        "cooking_oil",
+        "green_chilies",
+        "grilled_chicken_breasts",
+        "garlic_powder",
+        "yellow_onion",
+        "soy_sauce",
+        "butter",
+        "chicken_livers"
+      ]
+    },
+	{
+      "id": 2362,
+      "cuisine": "mexican",
+      "ingredients": [
+        "green_chile",
+        "jalapeno_chilies",
+        "onions",
+        "ground_black_pepper",
+        "salt",
+        "chopped_cilantro_fresh",
+        "green_bell_pepper",
+        "garlic",
+        "white_sugar",
+        "roma_tomatoes",
+        "celery",
+        "dried_oregano"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "romaine_lettuce",
+      "label": "romaine lettuce"
+    },
+    {
+      "id": "black_olives",
+      "label": "black olives"
+    },
+    {
+      "id": "grape_tomatoes",
+      "label": "grape tomatoes"
+    },
+    {
+      "id": "garlic",
+      "label": "garlic"
+    }
+  ]
+}

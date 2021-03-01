@@ -1,0 +1,1 @@
+java -jar rmlmapper.jar -m mapping_file.ttl -o output.ttl -s turtle
