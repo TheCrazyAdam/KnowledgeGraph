@@ -24,8 +24,7 @@
 
 	#recipe-cuisine
 	rr:predicateObjectMap [
-		# cuisine
-		rr:predicate wd:Property:P2012 ;
+		rr:predicate schema:servesCuisine ;
 		rr:objectMap [ rml:reference "cuisine" ; rr:datatype xsd:string ]
 	] ;
 
