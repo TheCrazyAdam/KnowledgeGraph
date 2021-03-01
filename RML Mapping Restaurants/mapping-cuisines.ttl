@@ -1,0 +1,55 @@
+@base <http://example.org/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix fowl: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix tb: <https://w3id.org/timebank#> .
+@prefix sbeo: <https://w3id.org/sbeo#> .
+@prefix ex: <http://example.org/> .
+@prefix schema: <https://schema.org/> .
+
+
+<TriplesMapCuisines>
+  a rr:TriplesMap;
+
+  # Define the data source (file location)
+  rml:logicalSource [
+    rml:source "dataworld-restaurants-cuisines.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+
+  # Define the subject of the generated statements
+  rr:subjectMap [ rr:template "http://example.org/{id}" ;
+    rr:class schema:MenuSection ];
+
+  # Map predicate and objects
+  rr:predicateObjectMap [ 
+    rr:predicate schema:servesCuisine ;
+    rr:objectMap [ rml:reference "cuisines" ; rr:datatype xsd:string ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate fowl:Meat ;
+    rr:objectMap [ rml:reference "uses pork" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:VegetarianDiet ;
+    rr:objectMap [ rml:reference "mostly vegetarian" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate sbeo:Fire ;
+    rr:objectMap [ rml:reference "spicy" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate tb:MilkAllergy ;
+    rr:objectMap [ rml:reference "use lactose" ; rr:datatype xsd:boolean ]
+  ] ;
+
+  rr:predicateObjectMap [ 
+    rr:predicate schema:audience ;
+    rr:objectMap [ rml:reference "diets" ; rr:datatype xsd:string ]
+  ] .

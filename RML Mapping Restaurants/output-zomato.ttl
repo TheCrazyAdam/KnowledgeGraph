@@ -1,0 +1,2177 @@
+@prefix ex: <http://example.org/> .
+@prefix fowl: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sbeo: <https://w3id.org/sbeo#> .
+@prefix schema: <https://schema.org/> .
+@prefix tb: <https://w3id.org/timebank#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:afghani a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Afghani";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:african a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "African";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:african_portuguese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "African, Portuguese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:american a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "american";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:andhra a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Andhra";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:arabian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Arabian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:arabian_lebanese a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Arabian, Lebanese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:arabian_mexican a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Arabian, Mexican";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:arabian_middle_eastern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Arabian, Middle Eastern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:asian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Asian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:assamese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Assamese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:australian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Australian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:awadhi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Awadhi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:awadhi_mughlai a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Awadhi, Mughlai";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:bakery a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "bakery";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:bar_food a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Bar Food";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bar_food_brazilian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Bar Food, Brazilian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:bar_food_modern_australian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Bar Food, Modern Australian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:bar_food_sandwich_seafood a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Bar Food, Sandwich, Seafood";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bar_food_seafood_vegetarian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Bar Food, Seafood, Vegetarian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:bar_food_steak a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Bar Food, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bbq a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "BBQ";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bbq_breakfast_southern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "BBQ, Breakfast, Southern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bbq_caribbean_cajun a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "BBQ, Caribbean, Cajun";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bbq_caribbean_seafood a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "BBQ, Caribbean, Seafood";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bbq_grill_brazilian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "BBQ, Grill, Brazilian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:bbq_sandwich a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "BBQ, Sandwich";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bbq_southern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "BBQ, Southern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:bengali a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Bengali";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bengali_seafood a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Bengali, Seafood";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:beverages a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Beverages";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:bihari a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Bihari";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:biryani a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Biryani";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:brazilian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Brazilian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:brazilian_bar_food a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Brazilian, Bar Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:brazilian_grill a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Brazilian, Grill";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:brazilian_mineira a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Brazilian, Mineira";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:brazilian_north_eastern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Brazilian, North Eastern";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:brazilian_seafood a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Brazilian, Seafood";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:brazilian_steak a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Brazilian, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:breakfast a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Breakfast";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_cajun a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Breakfast, Cajun";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_coffee_and_tea a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Breakfast, Coffee and Tea";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_coffee_and_tea_modern_australian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Breakfast, Coffee and Tea, Modern Australian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_diner a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Breakfast, Diner";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_diner_sandwich a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Breakfast, Diner, Sandwich";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_diner_southern a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Breakfast, Diner, Southern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_french a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Breakfast, French";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_mexican a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Breakfast, Mexican";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_mexican_southwestern a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Breakfast, Mexican, Southwestern";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_modern_australian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Breakfast, Modern Australian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_pizza a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Breakfast, Pizza";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_sandwich a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Breakfast, Sandwich";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:breakfast_spanish_tapas a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Breakfast, Spanish, Tapas";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:breakfast_vegetarian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Breakfast, Vegetarian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:british a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "British";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:british_bar_food_sandwich a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "British, Bar Food, Sandwich";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:british_contemporary a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "British, Contemporary";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:british_french a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "British, French";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:british_scottish_seafood a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "British, Scottish, Seafood";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:british_steak a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "British, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:burger a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Burger";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:cafe a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Cafe";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:cajun a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Cajun";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:caribbean a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Caribbean";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:caribbean_mexican_cajun a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Caribbean, Mexican, Cajun";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:caribbean_seafood a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Caribbean, Seafood";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:caribbean_seafood_steak a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Caribbean, Seafood, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:chinese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Chinese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:coffee_and_tea_mediterranean a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Coffee and Tea, Mediterranean";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:coffee_and_tea_modern_australian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Coffee and Tea, Modern Australian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:coffee_and_tea_sandwich a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Coffee and Tea, Sandwich";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:coffee_and_tea_tapas_australian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Coffee and Tea, Tapas, Australian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:coffee_and_tea_tea_modern_australian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Coffee and Tea, Tea, Modern Australian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:contemporary a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Contemporary";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:continental a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Continental";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:continental_european a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Continental, European";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:continental_kerala a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Continental, Kerala";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:continental_lebanese_mexican a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Continental, Lebanese, Mexican";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:continental_mexican a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Continental, Mexican";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:continental_mexican_mediterranean a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Continental, Mexican, Mediterranean";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:continental_seafood_goan_andhra_kerala_thai a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Continental, Seafood, Goan, Andhra, Kerala, Thai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:continental_tex-mex a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Continental, Tex-Mex";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:cuban_spanish a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Cuban, Spanish";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:cuisine_varies a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Cuisine Varies";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:desserts a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Desserts";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:drinks_only a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Drinks Only";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:european a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "European";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:european_contemporary a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "European, Contemporary";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:european_continental a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "European, Continental";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:european_continental_pizza a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "European, Continental, Pizza";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:european_german a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "European, German";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:european_international_tapas a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "European, International, Tapas";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:european_lebanese_mediterranean a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "European, Lebanese, Mediterranean";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:european_mediterranean_contemporary a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "European, Mediterranean, Contemporary";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:european_pizza a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "European, Pizza";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:european_south_african a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "European, South African";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:european_south_african_steak a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "European, South African, Steak";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:european_spanish a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "European, Spanish";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:fast_food a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "FAST FOOD";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:filipino a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Filipino";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:filipino_mexican a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Filipino, Mexican";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:finger_food a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Finger Food";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:french a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "French";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:french_kiwi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "French, Kiwi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:french_mediterranean_european a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "French, Mediterranean, European";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:french_western a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "French, Western";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:german a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "German";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:german_ice_cream a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "German, Ice Cream";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:goan a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Goan";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:goan_mangalorean_continental_french a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Goan, Mangalorean, Continental, French";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:goan_seafood a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Goan, Seafood";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:greek a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Greek";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:greek_lebanese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Greek, Lebanese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:greek_mediterranean a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Greek, Mediterranean";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:greek_mediterranean_middle_eastern a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Greek, Mediterranean, Middle Eastern";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:greek_mediterranean_vegetarian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Greek, Mediterranean, Vegetarian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:gujarati a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Gujarati";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:gujarati_rajasthani a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Gujarati, Rajasthani";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:hawaiian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Hawaiian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:hawaiian_seafood a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Hawaiian, Seafood";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:hawaiian_seafood_steak a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Hawaiian, Seafood, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:healthy_food a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Healthy Food";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:hyderabadi a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Hyderabadi";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:hyderabadi_awadhi a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Hyderabadi, Awadhi";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:ice_cream a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Ice Cream";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:indian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "indian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:indonesian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Indonesian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:international a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "International";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:international_mediterranean_sandwich a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "International, Mediterranean, Sandwich";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:international_pizza a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "International, Pizza";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:international_southern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "International, Southern";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:international_southern_vegetarian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "International, Southern, Vegetarian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:international_tapas_vegetarian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "International, Tapas, Vegetarian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:irish a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Irish";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:italian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "italian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:japanese a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Japanese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:japanese_french a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Japanese, French";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:japanese_korean a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Japanese, Korean";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:japanese_seafood_sushi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Japanese, Seafood, Sushi";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:japanese_steak a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Japanese, Steak";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:japanese_steak_sushi a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Japanese, Steak, Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:japanese_sushi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Japanese, Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:japanese_sushi_ramen a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Japanese, Sushi, Ramen";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:japanese_sushi_teriyaki a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Japanese, Sushi, Teriyaki";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:japanese_sushi_thai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Japanese, Sushi, Thai";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:japanese_thai_sushi a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Japanese, Thai, Sushi";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:japanese_tibetan_vietnamese_korean a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Japanese, Tibetan, Vietnamese, Korean";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:juices a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Juices";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:kashmiri a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Kashmiri";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:kashmiri_mughlai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Kashmiri, Mughlai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:kebab a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Kebab";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:kebab_izgara a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Kebab, Izgara";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:kebab_turkish_pizza a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Kebab, Turkish Pizza";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:kebab_turkish_pizza_d%C3%83%C2%AD_ner a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Kebab, Turkish Pizza, Dí_ner";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:kerala a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Kerala";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:kiwi_european a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Kiwi, European";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:korean a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Korean";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:lebanese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Lebanese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:lebanese_arabian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Lebanese, Arabian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:lebanese_arabian_middle_eastern a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Lebanese, Arabian, Middle Eastern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:lebanese_arabian_moroccan a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Lebanese, Arabian, Moroccan";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:lebanese_mediterranean_arabian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Lebanese, Mediterranean, Arabian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:lebanese_mediterranean_middle_eastern_arabian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Lebanese, Mediterranean, Middle Eastern, Arabian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:lucknowi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Lucknowi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:lucknowi_mughlai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Lucknowi, Mughlai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:maharashtrian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Maharashtrian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:malaysian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Malaysian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:malaysian_indonesian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Malaysian, Indonesian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:malaysian_thai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Malaysian, Thai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:malaysian_thai_kerala_vietnamese_sri_lankan a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Malaysian, Thai, Kerala, Vietnamese, Sri Lankan";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:mediterranean a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Mediterranean";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:mediterranean_continental a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Mediterranean, Continental";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:mediterranean_european a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Mediterranean, European";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:mediterranean_seafood a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Mediterranean, Seafood";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:mediterranean_tapas_vegetarian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Mediterranean, Tapas, Vegetarian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:mediterranean_turkish a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Mediterranean, Turkish";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:mexican a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Mexican";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:mexican_grill a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Mexican, Grill";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:mexican_southwestern_sushi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Mexican, Southwestern, Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:mexican_southwestern_tex-mex a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Mexican, Southwestern, Tex-Mex";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:mexican_spanish a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Mexican, Spanish";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:mexican_tex-mex a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Mexican, Tex-Mex";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:mexican_vegetarian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Mexican, Vegetarian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:middle_eastern_arabian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Middle Eastern, Arabian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:mithai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Mithai";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:modern_australian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Modern Australian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:modern_australian_australian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Modern Australian, Australian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:mughlai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Mughlai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:mughlai_afghani a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Mughlai, Afghani";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:mughlai_hyderabadi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Mughlai, Hyderabadi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:mughlai_lucknowi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "low_lactose_diet";
+  schema:servesCuisine "Mughlai, Lucknowi";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:mughlai_lucknowi_awadhi a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Mughlai, Lucknowi, Awadhi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:naga a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Naga";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:naga_tibetan a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Naga, Tibetan";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:nepalese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Nepalese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:nepalese_tibetan a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Nepalese, Tibetan";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:north_eastern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "North Eastern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:oriya a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Oriya";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:pakistani a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Pakistani";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:parsi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Parsi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:parsi_iranian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Parsi, Iranian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:patisserie_coffee_and_tea a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Patisserie, Coffee and Tea";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:peranakan_indonesian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Peranakan, Indonesian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:pizza a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Pizza";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:pizza_bar_food a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Pizza, Bar Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:pizza_bar_food_sandwich a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Pizza, Bar Food, Sandwich";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:pizza_grill a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Pizza, Grill";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:pizza_ice_cream a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Pizza, Ice Cream";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:pizza_sandwich a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Pizza, Sandwich";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:pizza_sandwich_vegetarian a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Pizza, Sandwich, Vegetarian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:pizza_seafood_steak a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Pizza, Seafood, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:portuguese_african a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Portuguese, African";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:portuguese_african_lebanese a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Portuguese, African, Lebanese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:pub_food a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Pub Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:rajasthani a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Rajasthani";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:rajasthani_gujarati_mughlai a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu";
+  schema:servesCuisine "Rajasthani, Gujarati, Mughlai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:ramen_japanese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Ramen, Japanese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:raw_meats a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Raw Meats";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:salad_continental a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Salad, Continental";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:sandwich a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Sandwich";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:sandwich_seafood_cajun a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Sandwich, Seafood, Cajun";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:sandwich_seafood_steak a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Sandwich, Seafood, Steak";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:sandwich_sushi_tapas a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Sandwich, Sushi, Tapas";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:seafood a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Seafood";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:seafood_african_sushi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Seafood, African, Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_bar_food_brazilian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Seafood, Bar Food, Brazilian";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:seafood_continental_european a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Seafood, Continental, European";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_continental_european_german a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Seafood, Continental, European, German";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:seafood_french a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Seafood, French";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_japanese_sushi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Seafood, Japanese, Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_kiwi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Seafood, Kiwi";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:seafood_mediterranean a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Seafood, Mediterranean";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:seafood_southern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Seafood, Southern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_steak a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Seafood, Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:seafood_steak_vegetarian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Seafood, Steak, Vegetarian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_sushi a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Seafood, Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_tapas_bar_food a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Seafood, Tapas, Bar Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:seafood_western a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Seafood, Western";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:singaporean_australian_german a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Singaporean, Australian, German";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:southern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Southern";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:southern_cajun_soul_food a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Southern, Cajun, Soul Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:spanish_tapas a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "";
+  schema:servesCuisine "Spanish, Tapas";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:sri_lankan a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal";
+  schema:servesCuisine "Sri Lankan";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:steak a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Steak";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:steak_bbq a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu|low_lactose_diet";
+  schema:servesCuisine "Steak, BBQ";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:steak_scottish_british a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Steak, Scottish, British";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:steak_seafood_grill a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Steak, Seafood, Grill";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:steak_tapas_bar_food a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Steak, Tapas, Bar Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:street_food a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Street Food";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:sunda_indonesian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Sunda, Indonesian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:sushi a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Sushi";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:sushi_japanese a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Sushi, Japanese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:sushi_japanese_cantonese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Sushi, Japanese, Cantonese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:sushi_teriyaki a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu";
+  schema:servesCuisine "Sushi, Teriyaki";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:sushi_thai a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Sushi, Thai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:tapas a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Tapas";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:tea a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Tea";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:tea_modern_australian a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Tea, Modern Australian";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:thai a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Thai";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:thai_japanese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|low_lactose_diet";
+  schema:servesCuisine "Thai, Japanese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:tibetan a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian";
+  schema:servesCuisine "Tibetan";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:tibetan_nepalese a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Tibetan, Nepalese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:turkish a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|hindu";
+  schema:servesCuisine "Turkish";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:turkish_arabian_middle_eastern a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|low_lactose_diet";
+  schema:servesCuisine "Turkish, Arabian, Middle Eastern";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:turkish_arabian_moroccan_lebanese a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian";
+  schema:servesCuisine "Turkish, Arabian, Moroccan, Lebanese";
+  sbeo:Fire "no";
+  tb:MilkAllergy "yes" .
+
+ex:turkish_mediterranean_middle_eastern a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "no";
+  schema:audience "hindu|low_lactose_diet";
+  schema:servesCuisine "Turkish, Mediterranean, Middle Eastern";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:turkish_pizza a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "no";
+  schema:audience "halal|low_lactose_diet";
+  schema:servesCuisine "Turkish Pizza";
+  sbeo:Fire "no";
+  tb:MilkAllergy "no" .
+
+ex:vietnamese a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "Vietnamese";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
+
+ex:vietnamese_fish_and_chips a schema:MenuSection;
+  fowl:Meat "yes";
+  schema:VegetarianDiet "yes";
+  schema:audience "vegetarian|hindu";
+  schema:servesCuisine "Vietnamese, Fish and Chips";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "yes" .
+
+ex:world_cuisine a schema:MenuSection;
+  fowl:Meat "no";
+  schema:VegetarianDiet "yes";
+  schema:audience "halal|vegetarian|hindu|low_lactose_diet";
+  schema:servesCuisine "World Cuisine";
+  sbeo:Fire "yes";
+  tb:MilkAllergy "no" .
