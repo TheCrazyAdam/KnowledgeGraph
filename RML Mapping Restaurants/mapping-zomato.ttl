@@ -78,7 +78,7 @@
 
   rr:predicateObjectMap [ 
     rr:predicate dbo:currency ;
-    rr:objectMap [ rr:template "http://linkedgeodata.org/ontology/{Currency}" ]
+    rr:objectMap [ rml:reference "Currency" ; rr:datatype xsd:string ]
   ] ;
 
   rr:predicateObjectMap [ 
