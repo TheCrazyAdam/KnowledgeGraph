@@ -1,0 +1,2 @@
+java -jar "C:\Users\Berat\Documents\graphdb-se-9.6.0\rmlmapper.jar" -m mapping-zomato.ttl -o output-zomato.ttl -s turtle
+java -jar "C:\Users\Berat\Documents\graphdb-se-9.6.0\rmlmapper.jar" -m mapping-cuisines.ttl -o output-cuisines.ttl -s turtle

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LIMES SYSTEM "limes.dtd">
+<LIMES>
+<PREFIX>
+    <NAMESPACE>http://linkedgeodata.org/ontology/</NAMESPACE>
+    <LABEL>Igdo</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+    <LABEL>dbo</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://example.org/</NAMESPACE>
+    <LABEL>ex</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://www.w3.org/2003/01/geo/wgs84_pos#</NAMESPACE>
+    <LABEL>geo</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://geonames.org/</NAMESPACE>
+    <LABEL>gn</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://semweb.mmlab.be/ns/ql#</NAMESPACE>
+    <LABEL>ql</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+    <LABEL>rdfs</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://www.w3.org/ns/r2rml#</NAMESPACE>
+    <LABEL>rr</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>https://schema.org/</NAMESPACE>
+    <LABEL>schema</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://www.w3.org/2001/XMLSchema#</NAMESPACE>
+    <LABEL>xsd</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+    <LABEL>owl</LABEL>
+</PREFIX>
+<PREFIX>
+    <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+    <LABEL>rdf</LABEL>
+</PREFIX>
+
+<SOURCE>
+    <ID>output-cuisines</ID>
+    <ENDPOINT>C:/Users/Berat/Desktop/KG/limes/limes-core/target/output-cuisines.ttl</ENDPOINT>
+    <VAR>?x</VAR>
+    <PAGESIZE>-1</PAGESIZE>
+    <RESTRICTION>?x rdf:type schema:MenuSection</RESTRICTION>
+    <PROPERTY>schema:servesCuisine</PROPERTY>
+    <TYPE>TURTLE</TYPE>
+</SOURCE>
+
+<TARGET>
+    <ID>output-zomato</ID>
+    <ENDPOINT>C:/Users/Berat/Desktop/KG/limes/limes-core/target/output-zomato.ttl</ENDPOINT>
+    <VAR>?y</VAR>
+    <PAGESIZE>-1</PAGESIZE>
+    <RESTRICTION>?y rdf:type schema:Restaurant</RESTRICTION>
+    <PROPERTY>schema:servesCuisine</PROPERTY>
+    <TYPE>TURTLE</TYPE>
+</TARGET>
+
+<METRIC>
+    levenshtein(x.schema:servesCuisine, y.schema:servesCuisine)
+</METRIC>
+
+<ACCEPTANCE>
+    <THRESHOLD>0.98</THRESHOLD>
+    <FILE>accepted.ttl</FILE>
+    <RELATION>owl:sameAs</RELATION>
+</ACCEPTANCE>
+
+<REVIEW>
+    <THRESHOLD>0.98</THRESHOLD>
+    <FILE>reviewme.ttl</FILE>
+    <RELATION>owl:sameAs</RELATION>
+</REVIEW>
+
+<EXECUTION>
+    <REWRITER>DEFAULT</REWRITER>
+    <PLANNER>DEFAULT</PLANNER>
+    <ENGINE>DEFAULT</ENGINE>
+</EXECUTION>
+
+<OUTPUT>TTL</OUTPUT>
+
+</LIMES>

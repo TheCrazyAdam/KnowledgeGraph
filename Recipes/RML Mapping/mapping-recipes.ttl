@@ -1,0 +1,56 @@
+@base <http://example.org/> .
+@prefix ex: <http://example.org/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<TriplesMapRecipes>
+	a rr:TriplesMap ;
+	
+	# Define the data source (file location)
+	rml:logicalSource [
+		rml:source "kaggle_recipes.json" ;
+		rml:referenceFormulation ql:JSONPath ;
+		rml:iterator "$.recipes[*]"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://example.org/{id}" ;
+		rr:class schema:Recipe
+	] ;
+
+	#recipe-cuisine
+	rr:predicateObjectMap [
+		rr:predicate schema:servesCuisine ;
+		rr:objectMap [ rml:reference "cuisine" ; rr:datatype xsd:string ]
+	] ;
+
+	#recipe-ingredients
+	rr:predicateObjectMap [
+		rr:predicate schema:recipeIngredient ;
+		rr:objectMap [ rml:reference "ingredients" ; rr:datatype xsd:string ]
+	] .
+
+
+#<TriplesMapIngredients>
+	#a rr:TriplesMap ;
+	# Define the data source (file location)
+	#rml:logicalSource [
+	#	rml:source "kaggle_recipes.json" ;
+	#	rml:referenceFormulation ql:JSONPath ;
+	#	rml:iterator "$.ingredients[*]"
+	#] ;
+
+	#rr:subjectMap [
+	#	rr:template "http://example.org/ingredient/{id}" ;
+		# food ingredient
+	#	rr:class wd:Q25403900
+	#] ;
+
+	#rr:predicateObjectMap [
+	#	rr:predicate rdfs:label ;
+	#	rr:objectMap [ rml:reference "label" ; rr:datatype xsd:string ]
+	#] .
