@@ -1,1 +1,2 @@
-java -jar rmlmapper.jar -m mapping-recipes.ttl -o output-recipes.ttl -s turtle
+java -jar rmlmapper.jar -m mapping-recipes.ttl -o ../output-recipes.ttl -s turtle
+java -jar rmlmapper.jar -m mapping-ingredients.ttl -o ../output-ingredients.ttl -s turtle
